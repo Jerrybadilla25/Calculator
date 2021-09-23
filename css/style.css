@@ -1,0 +1,219 @@
+:root{
+    --bg-green-dark: #2f3945;
+    --bg-header: #3a4757;
+    --border-box: #7c8691;
+    --bg-white-ligth: #d2d7df;
+    --l-red: #90aa67;
+    --l-white: #fffafa;
+    --bg-men: #48607c;
+    --bg-ac: #7a2a2a;
+    --bg-con: #70869c;
+    --font-num: 'Patrick Hand';
+    --shadow: 3px 3px 3px 3px #808892;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-green-dark);
+}
+.container-grid{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 135px;
+    
+}
+
+.box-calc{
+    display: grid;
+    grid-template-columns: 70px 50px 70px 50px 50px 50px 50px 50px ;
+    grid-template-rows: repeat(5, 40px);
+    column-gap: 12px;
+    row-gap: 10px;
+    justify-content: center;
+    background-color: var(--bg-white-ligth);
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: var(--shadow);
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px; 
+}
+.num{
+    background-color: var();
+    box-shadow: var(--shadow);
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-top: 12%;
+    border: solid 1px var(--border-box);
+    color: var(--bg-green-dark);    
+}
+.num:hover{
+    font-size: 1.8em;
+    padding-top: 8%;
+    background-color: var(--bg-con);
+    color: var(--l-white);
+    
+}
+.oper{
+    border: solid 1px var(--border-box);
+    color: var(--bg-green-dark);
+    font-size: 1.3em;
+    padding-top: 12%;
+    box-shadow: var(--shadow);
+}
+.oper:hover{
+    background-color: var(--bg-con);
+    color: var(--l-white);
+    font-size: 1.6em;
+    padding-top: 8%;
+}
+.igual{
+    border: solid 1px var(--border-box);
+    color: var(--bg-green-dark);
+    font-size: 1.3em;
+    padding-top: 12%;
+    box-shadow: var(--shadow);
+}
+
+.men{
+    border: solid 1px var(--border-box);
+    color: var(--bg-green-dark);
+    font-size: 0.8em;
+    padding-top: 15px;
+    box-shadow: var(--shadow);   
+}
+.ac{
+    background-color: var(--bg-ac);
+    border: solid 1px var(--border-box);
+    color: var(--l-white);
+    padding-top: 10px;
+    box-shadow: var(--shadow);
+}
+.ac:hover{
+    font-size: 1.3em;
+    padding-top: 7px;
+}
+.icon{
+    color: var(--bg-green-dark);
+    padding-top: 3px;
+    font-size: 2em;
+    
+}
+.icon:hover{
+    color: var(--bg-green-dark);
+    font-size: 2.2em;
+    
+}
+.ans{
+    border: solid 1px var(--border-box);
+    color: var(--bg-green-dark);
+    padding-top: 15px;
+    box-shadow: var(--shadow);
+}
+
+
+
+
+
+
+/*###################### header #################*/
+
+.row{
+    display: grid;
+    background-color: var(--l-white);
+    grid-template-columns: 564px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 1px;
+    height: auto;
+    box-shadow: var(--shadow);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-header);
+    width: 100%;
+    height: 100px;
+}
+.header-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+.header-box-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: baseline;
+    margin: 0 10% 0 10%;
+}
+.h1{
+    padding: 10px 10px 2px 5px;
+    color: var(--l-white);
+
+}
+.h2{
+    padding-right: 10px;
+    color: var(--bg-ac);
+    font-weight: 900;
+    background-color: var(--l-white);
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.2em;
+}
+
+
+
+/*######################## display ####################*/
+.display{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 5px 10px;
+    
+}
+.sub-display{
+    background-color: var(--bg-green-dark);
+    border-radius: 10px 10px 0 0;
+}
+.pila-1{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid 1px var(--bg-white-ligth);
+    font-size: 2.3em;
+    font-weight: 900;
+    color: var(--l-white);
+    height: 35px;
+    background-color: var(--bg-green-dark);
+}
+
+.pila{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    height: 18px;
+    color: var(--l-white);
+    
+}
+#pila-4{
+    font-size: 1em;
+    margin: 0.5em;
+    border-radius: 5px 5px 0 0;
+    
+}
