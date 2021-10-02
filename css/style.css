@@ -105,7 +105,6 @@ body{
     color: var(--bg-green-dark);
     padding-top: 3px;
     font-size: 2em;
-    
 }
 .icon:hover{
     color: var(--bg-green-dark);
@@ -117,6 +116,10 @@ body{
     color: var(--bg-green-dark);
     padding-top: 15px;
     box-shadow: var(--shadow);
+}
+.ans:hover{
+    background-color: var(--bg-con);
+    color: var(--bg-white-ligth); 
 }
 
 
@@ -208,12 +211,98 @@ header{
     padding-bottom: 10px;
     font-size: 1.5em;
     height: 18px;
+    color: var(--l-white); 
+}
+.pila-4{
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    height: 18px;
+    color: var(--l-white); 
+}
+.pila-2{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    height: 25px;
     color: var(--l-white);
-    
+    letter-spacing: 3px;
+    text-overflow: Ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.pila-3{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    color: var(--l-white); 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pila-3 p{
+    margin: 0;
+}
+.pila-p{
+    font-size: 0.8em;
+    padding: 5px;
+    background-color: var(--bg-white-ligth);
+    border-radius: 5px;
+    color: var(--bg-green-dark);
+}
+.pila-3-pa{
+    display: none;
+}
+.pila-p-id{
+    display: none;
+}
+#pila-3{
+    padding-left: 30px;
+    padding-top: 3px;
 }
 #pila-4{
     font-size: 1em;
-    margin: 0.5em;
+    margin: 0.5em 4em 0.2em 4em;
     border-radius: 5px 5px 0 0;
     
+    
+    
 }
+.pila-sub-3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pila-5{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.pila-5-p{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.75em;
+    padding: 0.1em .5em 0.1em .5em;
+    margin: 0.5em .5em 0 .5em;
+    background-color: var( --bg-green-dark);
+    border-radius: 5px;
+    color: var(--bg-white-ligth);
+    width: 85px;
+}
+.pila-5-p p{
+    padding: 0;
+    margin: 0.2em;
+    color: aqua;
+}
+
+
+
