@@ -1,4 +1,10 @@
 @media only screen and (max-width: 600px) {
+    header{
+        position: unset;
+        background-color: var(--bg-header);
+        width: 100%;
+        height: 100px;
+    }
     .container-grid{
         display: flex;
         justify-content: center;
@@ -6,17 +12,17 @@
         flex-wrap:wrap;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 105px;  
+        padding-top: 5px;  
     }
     .box-calc{
         display: grid;
-        grid-template-columns: 40px 25px 40px 30px 30px 30px 30px 40px ;
-        grid-template-rows: repeat(5, 40px);
-        column-gap: 7.2px;
-        row-gap: 5px;
+        grid-template-columns: 52px 52px 52px 52px 52px ;
+        grid-template-rows: repeat(8, 40px);
+        column-gap: 14px;
+        row-gap: 14px;
         justify-content: center;
         background-color: var(--bg-white-ligth);
-        padding: 20px;
+        
         border-radius: 0;
         box-shadow: var(--shadow);
        
@@ -32,10 +38,10 @@
         box-shadow: var(--shadow);
     }
     .men{
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
     .ans{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     .pila-5-p{
         
@@ -49,6 +55,14 @@
         color: var(--bg-white-ligth);
         width: 45px;
     }
+    
+    .lado{
+        display: none;
+    }
+    .arriba{
+        display: block;
+    }
+    
     .pila-5-p{
         display: flex;
         flex-direction: column;
@@ -60,4 +74,49 @@
         color: var(--bg-white-ligth);
         width: 45px;
     }
+    .item:nth-of-type(1) { order: -40; }
+    .item:nth-of-type(9) { order: -39; }
+    .item:nth-of-type(17) { order: -38; }
+    .item:nth-of-type(25) { order: -37; }
+    .item:nth-of-type(33) { order: -36; }
+    .item:nth-of-type(4) { order: -35; }
+    .item:nth-of-type(5) { order: -34; }
+    .item:nth-of-type(6) { order: -33; }
+    .item:nth-of-type(7) { order: -32; }
+    .item:nth-of-type(8) { order: -31; }
+    .item:nth-of-type(12) { order: -30; }
+    .item:nth-of-type(13) { order: -29; }
+    .item:nth-of-type(14) { order: -28; }
+    .item:nth-of-type(15) { order: -27; }
+    .item:nth-of-type(16) { order: -26; }
+    .item:nth-of-type(20) { order: -25; }
+    .item:nth-of-type(21) { order: -24; }
+    .item:nth-of-type(22) { order: -23; }
+    .item:nth-of-type(23) { order: -22; }
+    .item:nth-of-type(24) { order: -21; }
+    .item:nth-of-type(28) { order: -20; }
+    .item:nth-of-type(29) { order: -19; }
+    .item:nth-of-type(30) { order: -18; }
+    .item:nth-of-type(31) { order: -17; }
+    .item:nth-of-type(32) { order: -16; }
+
+    .item:nth-of-type(36) { order: -15; }
+    .item:nth-of-type(37) { order: -14; }
+    .item:nth-of-type(38) { order: -13; }
+    .item:nth-of-type(39) { order: -12; }
+    .item:nth-of-type(40) { order: -11; }
+
+    .item:nth-of-type(3) { order: -10; }
+    .item:nth-of-type(11) { order: -9; }
+    .item:nth-of-type(19) { order: -8; }
+    .item:nth-of-type(27) { order: -7; }
+    .item:nth-of-type(35) { order: -6; }
+
+    .item:nth-of-type(2) { order: -5; }
+    .item:nth-of-type(10) { order: -4; }
+    .item:nth-of-type(18) { order: -3; }
+    .item:nth-of-type(26) { order: -2; }
+    .item:nth-of-type(34) { order: -1; }
+  
+
   }

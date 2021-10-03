@@ -4,6 +4,7 @@
     --border-box: #7c8691;
     --bg-white-ligth: #d2d7df;
     --l-red: #90aa67;
+    --l-agua: #06e7f7;
     --l-white: #fffafa;
     --bg-men: #48607c;
     --bg-ac: #7a2a2a;
@@ -102,7 +103,8 @@ body{
     padding-top: 7px;
 }
 .icon{
-    color: var(--bg-green-dark);
+    background-color: var(--bg-green-dark);
+    color: var(--l-white);
     padding-top: 3px;
     font-size: 2em;
 }
@@ -111,6 +113,14 @@ body{
     font-size: 2.2em;
     
 }
+
+.arriba{
+    display: none;
+}
+
+
+
+
 .ans{
     border: solid 1px var(--border-box);
     color: var(--bg-green-dark);
@@ -301,7 +311,42 @@ header{
 .pila-5-p p{
     padding: 0;
     margin: 0.2em;
-    color: aqua;
+    color: var(--l-agua);
+}
+
+
+/*############# footer  ########################*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    margin-top: 80px;
+    background-color: var(--bg-header);
+    color: var(--l-white);
+}
+.footer-item{
+   margin: 0;
+   
+    
+}
+.footer-item p{
+   
+    display: inline;
+    padding-bottom: 5px;
+}
+.footer-item h5{
+    margin: 0;
+    display: inline;
+    font-size: 1.5em;
+    color: var(--l-agua);
+    
+}
+.footer-text{
+    margin: 0;
+    padding-top: 5em;
+    
+   
 }
 
 

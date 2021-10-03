@@ -176,7 +176,7 @@ function evaluar(){
         case "-" : display1= eval(valor1 - valor2); break;
         case "x" : display1= eval(valor1 * valor2); break;
         case "÷" : display1= eval(valor1 / valor2); break;
-        case "%" : display1= eval(valor1*100/valor2); break;
+        case "%" : display1= eval(valor1*valor2/100); break;
     }
     display2 = display2 + "=" + display1;
     historial.push(display2);
