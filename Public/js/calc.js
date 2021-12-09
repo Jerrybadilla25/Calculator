@@ -15,13 +15,23 @@ var idx = "";
 var mr = 0;
 var mMasOne = "";
 
-
+function addCommas(nStr) {
+    nStr += '';
+    var x = nStr.split('.');
+    var x1 = x[0];
+    var x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}
 
 
 function actualizarDisplay (){
-    document.getElementById('pila-1').innerHTML = display1;
+    document.getElementById('pila-1').innerHTML = addCommas(display1);
     document.getElementById('pila-2').innerHTML = display2;
-    document.getElementById('pila-3').innerHTML = display3;
+    document.getElementById('pila-3').innerHTML = addCommas(display3);
     document.getElementById('pila-4').innerHTML = display4;
     document.getElementById('pila-3-p').innerHTML = mMasOne;
     document.getElementById('pila-5').innerHTML = display5;
@@ -131,29 +141,29 @@ function operaciones(operando){
     if(display2.indexOf('=')==-1){
         if(display2.indexOf('-')==0){
             valor1 = display1;
-            //console.log("estoy rn 1")
+            console.log("estoy rn 1")
             display1 = "";
             display2 = display2 + operador;
             document.getElementById('pila-2').style.color= '';
             actualizarDisplay();  
         }else{
             if(display2.indexOf(operador)==-1){
-                //console.log("estoy rn 2")
+                console.log("estoy rn 2")
                 if(display1==""){
-                    //console.log("estoy rn 3")
+                    console.log("estoy rn 3")
                   valor1 = parseFloat(resultado);
                 }else{
-                    //console.log("estoy rn 4")
+                    console.log("estoy rn 4")
                   valor1 = parseFloat(display1);
                 }
-                //console.log("estoy rn 5")
+                console.log("estoy rn 5")
             display1 = "";
             display2 = display2 + operador;
             document.getElementById('pila-2').style.color= '';
             actualizarDisplay();  
           }else{
-            //console.log("estoy rn 6")
-              //codigo
+            console.log("estoy rn 6")
+            evaluar();
           }  
         }
       

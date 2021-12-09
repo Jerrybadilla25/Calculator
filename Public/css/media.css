@@ -16,26 +16,32 @@
     }
     .box-calc{
         display: grid;
-        grid-template-columns: 52px 52px 52px 52px 52px ;
-        grid-template-rows: repeat(8, 40px);
+        grid-template-columns: repeat(5, 54px) ;
+        grid-template-rows: repeat(8, 46px);
         column-gap: 14px;
         row-gap: 14px;
         justify-content: center;
         background-color: var(--bg-white-ligth);
-        
         border-radius: 0;
-        box-shadow: var(--shadow);
-       
     }
     .row{
         display: grid;
         background-color: var(--bg-header);
-        grid-template-columns: 355px;
+        grid-template-columns: 366px;
         border-radius: 0;
-        
         margin-bottom: 1px;
         height: auto;
-        box-shadow: var(--shadow);
+    }
+    .display{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px 5px 10px;
+        
+    }
+    .pila-5{
+        
+        display: flex;
+        justify-content: center;
     }
     .men{
         font-size: 0.8em;
@@ -43,18 +49,7 @@
     .ans{
         font-size: 0.9em;
     }
-    .pila-5-p{
-        
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 0.75em;
-        
-        margin: 0.5em .5em 0 .5em;
-        background-color: var( --bg-green-dark);
-        border-radius: 5px;
-        color: var(--bg-white-ligth);
-        width: 45px;
-    }
+    
     
     .lado{
         display: none;
