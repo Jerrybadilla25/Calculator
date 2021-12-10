@@ -176,3 +176,5 @@ menSTO();
 localSTO();
 printDisplay5();
 arrayLocal();
+
+module.exports = memSto;
