@@ -158,4 +158,4 @@ function logKey(e) {
 
 constantes();
 
-module.exports = memory;
+

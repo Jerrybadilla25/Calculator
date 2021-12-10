@@ -1,5 +1,3 @@
-const memory = require('./const.men');
-const memSto = require('./menSTO');
 
 var display1 = "";
 var display2 = "";
